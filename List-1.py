@@ -54,5 +54,15 @@ def make_ends(nums):
   if len(nums) >= 1:
       makeEnds = [nums[0],nums[len(nums)-1]]
       return makeEnds
+    
+def has23(nums):
+  if nums >=2:
+    if nums[0] ==2 or nums[1] ==2:
+      return True
+    if nums[0] == 3 or nums[1]==3:
+      return True
+  return False
+
+
 
 
