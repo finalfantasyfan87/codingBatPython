@@ -30,3 +30,29 @@ def rotate_left3(nums):
 def reverse3(nums):
   return nums[::-1]
 
+def max_end3(nums):
+  if nums[0] > nums[2]:
+      first = [nums[0], nums[0], nums[0]]
+      return first
+  else:
+      last = [nums[2], nums[2], nums[2]]
+      return last
+
+def sum2(nums):
+  if len(nums) >=2:
+    return nums[0] +nums[1]
+  if len(nums) <1:
+    return 0
+  else:
+    return nums[0]
+
+ def middle_way(a, b):
+  middle = [a[1],b[1]]
+  return middle
+
+def make_ends(nums):
+  if len(nums) >= 1:
+      makeEnds = [nums[0],nums[len(nums)-1]]
+      return makeEnds
+
+
