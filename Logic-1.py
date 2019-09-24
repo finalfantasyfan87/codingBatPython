@@ -32,3 +32,36 @@ def caught_speeding(speed, is_birthday):
   else:
     return 2
   
+def sorta_sum(a, b):
+  sum = a+b
+  if sum >=10 and sum <=19:
+    return 20
+  else:
+    return sum
+  
+def alarm_clock(day, vacation):
+  if vacation == True and (day == 0 or day == 6):
+    return 'off'
+  elif vacation == False and (day == 0 or day == 6):
+    return '10:00'
+  elif vacation == True and  not (day == 0 or day == 6):
+    return '10:00'
+  else:
+    return '7:00'
+    
+def love6(a, b):
+  sum = a + b
+  diff = abs(a-b)
+  if a == 6 or b == 6:
+    return True
+  if sum == 6 or diff == 6:
+    return True
+  return False
+
+def in1to10(n, outside_mode):
+    if not outside_mode:
+      return n>=1 and n<11
+    return n<=1 or n >=10
+    
+def near_ten(num):
+ return (num+2) % 10 <=4
